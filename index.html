@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blood Donation — Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="index">
+  <header>
+    <nav>
+      <div class="logo">🩸 <span>Blood Donation</span></div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="availability.html">Availability</a></li>
+      <li><a href="needblood.html" class="active">Need of Blood</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-left">
+        <h1>Donate blood. Save lives.</h1>
+        <p>Join our community of donors — quickly register and help hospitals get the blood they need when they need it.</p>
+
+        <div class="hero-stats" aria-hidden="true">
+          <div class="stat">
+            <h3>Total donors</h3>
+            <span id="totalDonors">0</span>
+          </div>
+          <div class="stat">
+            <h3>Most needed</h3>
+            <span id="mostNeeded">—</span>
+          </div>
+        </div>
+
+        <div style="margin-top:18px">
+          <a class="btn" href="register.html">Register as Donor</a>
+          <a class="btn secondary" href="availability.html">View Availability</a>
+        </div>
+      </div>
+
+      <div class="hero-right" style="min-width:240px; text-align:center;">
+        <!-- decorative area — optional image -->
+        <div style="width:220px; height:220px; border-radius:12px; background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.02)); display:flex; align-items:center; justify-content:center;">
+          <div style="font-size:54px; transform:translateY(-6px)">🩸</div>
+        </div>
+      </div>
+    </section>
+  </main>
+<script>
+  // Check if user is logged in
+  if (localStorage.getItem("isLoggedIn") !== "true") {
+    alert("⚠️ You must login first!");
+    window.location.href = "login.html"; // Redirect to Login Page
+  }
+</script>
+
+  <script src="script.js"></script>
+</body>
+</html>

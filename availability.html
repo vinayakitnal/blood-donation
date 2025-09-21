@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Availability — Blood Donation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="availability">
+  <header>
+    <nav>
+      <div class="logo">🩸 <span>Blood Donation</span></div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="availability.html">Availability</a></li>
+      <li><a href="needblood.html" class="active">Need of Blood</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 style="color:var(--primary)">Blood Group Availability</h2>
+      <p class="small-muted">Progress shows current donors vs target for each blood group.</p>
+
+      <div class="controls" style="margin-top:12px;">
+        <div style="flex:1">
+          <div style="display:flex; gap:8px;">
+            <div class="badge">Targets</div>
+            <div class="small-muted" style="align-self:center;">Set target donors per blood group</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="targetControls" class="row" style="margin-bottom:16px;"></div>
+
+      <div id="availabilityList"></div>
+
+      <h3 style="margin-top:18px;">Registered Donors</h3>
+      <div id="donorTableWrap"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
